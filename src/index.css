@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  
+.resizer {
+  background: #000;
+  cursor: ew-resize; /* Change cursor for horizontal resizer */
+  width: 5px; /* Width of the resizer */
+  height: 100%; /* Full height for vertical resizer */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.resizer.vertical {
+  cursor: ns-resize; /* Change cursor for vertical resizer */
+  width: 100%; /* Full width for horizontal resizer */
+  height: 5px; /* Height of the resizer */
+  bottom: 0;
+  left: 0;
+}
